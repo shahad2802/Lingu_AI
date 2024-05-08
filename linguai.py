@@ -112,8 +112,8 @@ def main():
 
         else:
             ai_response = Gemini_respon(user_input)
-        chat_history.append(f"AI: {ai_response}")
-        st.write("\n\n".join(chat_history))
+            chat_history.append(f"AI: {ai_response}")
+            st.write("\n\n".join(chat_history))
 
     # Add a sidebar button icon for the game
     if st.button("Play Game"):
