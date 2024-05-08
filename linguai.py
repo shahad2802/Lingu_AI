@@ -118,6 +118,6 @@ def main():
     # Add a sidebar button icon for the game
     if st.button("Play Game"):
        # Add your game logic here
-      st.write("AI: Let's play a game!")if __name__ == "__main__":
+      st.write("AI: Let's play a game!")
 if __name__ == "__main__":
     main()
