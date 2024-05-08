@@ -4,3 +4,4 @@ streamlit
 TensorFlow
 tf-keras
 torch 
+SentencePiece
