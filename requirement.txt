@@ -1,0 +1,4 @@
+transformers 
+google.generativeai 
+os
+streamlit 
