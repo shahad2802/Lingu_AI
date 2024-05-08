@@ -97,7 +97,6 @@ def main():
         if user_input.lower().startswith(("goodbye", "bye", "see you")):
             ai_response = "AI: Goodbye!"
         elif user_input.lower().startswith(("ترجم", "هل يمكن أن تترجم", "هل يمكنك ترجمة")):
-            chat_history.append(f"You: {user_input}")
              original, translated_text = translate_and_learn(user_input)
              if original and translated_text:
                     st.write(f"AI: {translated_text}{original} بالعربية، تُترجم إلى  ")
@@ -105,7 +104,6 @@ def main():
                     st.write("AI: Sorry, I couldn't process the translation request.")
 
         elif user_input.lower().startswith(("can you translate", "translate")):
-                chat_history.append(f"You: {user_input}")
                 original, translated_text = translate_and_learn(user_input)
                 if original and translated_text:
                     st.write(f"AI: Sure! In English, '{original}' translates to '{translated_text}'")
