@@ -1,3 +1,5 @@
 transformers 
 google.generativeai 
 streamlit 
+TensorFlow
+PyTorch
