@@ -1,6 +1,5 @@
 from transformers import pipeline
 import google.generativeai as genai
-import os
 import streamlit as st
 
 key = "AIzaSyBUQhOgsMRwJNttWusGdRD7CyAFt4_PhXw"
