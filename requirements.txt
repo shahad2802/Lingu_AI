@@ -2,3 +2,5 @@ transformers
 google.generativeai 
 streamlit 
 TensorFlow
+tf-keras
+torch 
