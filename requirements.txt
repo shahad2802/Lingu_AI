@@ -1,7 +1,6 @@
 transformers 
 google.generativeai 
 streamlit>=1.5.0
-streamlit.caching 
 TensorFlow
 tf-keras
 torch 
