@@ -17,23 +17,19 @@ translator = pipeline("translation", model="shahad-alh/translateAR_EN", tokenize
 
 translator2 = pipeline("translation", model="shahad-alh/translateEN_AR", tokenizer="shahad-alh/translateEN_AR")
 
-@st.cache(allow_output_mutation=True)
 def translate_AR_EN(text, source_lang="ar", target_lang="en"):
     translated_text = translator(text, src_lang=source_lang, tgt_lang=target_lang)
     return translated_text[0]["translation_text"]
 
-@st.cache(allow_output_mutation=True)
 def translate_EN_AR(text, source_lang="en", target_lang="ar"):
     translated_text = translator2(text, src_lang=source_lang, tgt_lang=target_lang)
     return translated_text[0]["translation_text"]
 
 
-@st.cache(allow_output_mutation=True)
 def Gemini_respon(text):
     ai_response = chat.send_message(text).text
     return ai_response
     
-@st.cache(allow_output_mutation=True)
 def translate_and_learn(text):
   excluded_keywords = ["ترجم", "هل يمكنك ترجمة", "هل يمكن أن تترجم"]
   if text.lower().startswith(tuple(excluded_keywords)):
