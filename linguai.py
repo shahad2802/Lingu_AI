@@ -120,7 +120,7 @@ def main():
             st.write("\n\n".join(chat_history))
 
     # Add a sidebar button icon for the game
-    if stزsidebar.button("Play Game"):
+    if st.sidebar.button("Play Game"):
        # Add your game logic here
       st.write("AI: Let's play a game!")
 if __name__ == "__main__":
