@@ -1,7 +1,6 @@
 from transformers import pipeline
 import google.generativeai as genai
 import streamlit as st
-from streamlit.caching import cache
 
 key = "AIzaSyBUQhOgsMRwJNttWusGdRD7CyAFt4_PhXw"
 
