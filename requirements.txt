@@ -1,6 +1,7 @@
 transformers 
 google.generativeai 
 streamlit == 1.4.0
+streamlit.caching import cache
 TensorFlow
 tf-keras
 torch 
